@@ -7,9 +7,7 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    id("java")
     id("application")
-    id("io.freefair.lombok") version "8.4"
 }
 
 repositories {
@@ -45,6 +43,11 @@ dependencies {
     // base de datos incrustada
     // https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
     implementation("org.xerial:sqlite-jdbc:3.46.0.0")
+// https://mvnrepository.com/artifact/io.projectreactor/reactor-core
+implementation("io.projectreactor:reactor-core:3.6.7")
+
+
+
 
 
 

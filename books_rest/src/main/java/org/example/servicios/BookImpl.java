@@ -7,12 +7,13 @@ import org.example.db.Book;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
+
 
 @ApplicationScoped
 public class BookImpl implements IBook{
 
-    @PersistenceContext
+
+    @Inject
     private EntityManager em;
 
 
